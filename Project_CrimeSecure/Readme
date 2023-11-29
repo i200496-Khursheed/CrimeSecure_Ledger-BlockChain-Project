@@ -1,0 +1,7 @@
+dotenv
+express-jwt
+bcrypt
+jsonwebtoken
+datefns ka bhi tha
+validate ka bhi tha (validator)
+react-router-dom
