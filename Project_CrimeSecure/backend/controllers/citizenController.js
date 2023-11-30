@@ -1,4 +1,4 @@
-//CitizenController.js
+//CitizenController Done
 const Crime = require('../models/crimeModel') 
 const mongoose = require('mongoose')
 
