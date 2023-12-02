@@ -1,0 +1,296 @@
+/* Crime Portal Template */
+:root {
+  --primary: #050505;
+  --error: #f70000;
+}
+
+body 
+{
+  background: linear-gradient(to bottom, #a0e16b, #d9e22a);
+  margin: 0;
+  font-family: "Arial";
+}
+
+header {
+  background: rgb(30, 31, 30);
+}
+
+.container ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1px;
+  transition: all 0.2s ease;
+}
+
+.container ul li a:hover {
+  background-color: #3671ef;
+  color: #000;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: rgb(240, 243, 241);
+  text-decoration: none;
+}
+
+header a h2{
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+ul li {
+text-decoration: none;
+list-style: none;
+padding: auto;
+margin: 15px;
+}
+
+ul {
+  display: flex;
+}
+
+/* Crime page */
+.AddCrimePage {
+  display: flex;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.new-crime-details {
+  background: rgb(255, 250, 250);
+  border-radius: 50px;
+  margin: 20px 400px 10px 10px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0em;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, #82d2d6, #e2b878);
+}
+
+.crime-details{
+  background: rgb(255, 250, 250);
+  border-radius: 50px;
+  margin: 20px 10px 10px 10px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0em;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, #82d2d6, #e2b878);
+  width: 400px;
+  display: inline-block;
+}
+
+.crime-details li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.new-crime-details span {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  background: #c41818;
+  padding: 15px;
+  border-radius: 30%;
+  color: rgb(240, 235, 235);
+}
+
+.new-crime-details p {
+  margin: 30px;
+  font-size: 1.1em;
+  text-align: justify;
+  color: rgb(24, 16, 36);
+}
+
+.new-crime-details p1 {
+  margin: 150px;
+  font-size: 1.4em;
+  text-align: center;
+  color: rgb(24, 16, 36);
+}
+
+.new-crime-details h4 {
+  margin: 10px 0 5px 10px;
+  font-size: 1.9em;
+  color: var(--primary);
+}
+
+.updateButton{
+  background: rgb(37, 47, 48);
+  border: 10;
+  border-color: #070707;
+  color: rgb(245, 250, 247);
+  padding: 15px;
+  font-family: "Arial";
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  margin-inline: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+}
+
+.deleteButton{
+  background: rgb(243, 1, 1);
+  border: 10;
+  border-color: #070707;
+  color: rgb(245, 250, 247);
+  padding: 15px;
+  font-family: "Arial";
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  margin-inline: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+}
+
+.updateTextBox{
+  margin-inline: 20px;
+}
+
+/* Add Crime Record  */
+label, input {
+  display: block;
+}
+
+div.error {
+  padding: 10px;
+  background: #f1f0f0;
+  border: 1px dashed var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 10px 10px;
+}
+
+form button {
+  background: black;
+  border: 0;
+  color: rgb(241, 247, 243);
+  padding: 20px;
+  font-family: "Arial";
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+  cursor: pointer;
+}
+
+form {
+  background: rgb(255, 250, 250);
+  border-radius: 50px;
+  margin: 20px 400px 10px 10px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0em;
+  max-height: 720px;
+  overflow-y: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.7);
+  background: linear-gradient(to bottom, #dff063, #4edede);
+}
+input {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 350px;
+  border: 4px solid rgb(3, 10, 7);
+  border-radius: 10px;
+  box-sizing: content-box;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.crime-details img {
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+  border-radius: 10px;
+}
+
+.crime-details img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+  border-radius: 10px;
+}
+
+.new-crime-details img {
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.new-crime-details img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 5px rgba(9, 9, 9, 0.3);
+  border-radius: 10px;
+}
+
+.search-bar {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 130px;
+  left: 43%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5)
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form.signup, form.login {
+  max-width: 385px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom, #44eccd, #e0af1d);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+nav > div > a {
+  margin-right: 20px;
+}
+
+button#out {
+  margin-left: 30px;
+  background-color: #f7f6f4;
+  color: rgb(5, 5, 5);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+nav span {
+  color: white;
+}
